@@ -1,11 +1,11 @@
-﻿package lab_1;
-
+﻿
+package lab_1;
 import java.io.*;
 import java.util.*;
 
 public class Lab1 {
 	private static DirectedGraph graph;
-	private static String[] String;
+	private static String[] words;
 	private static Scanner sc = new Scanner(System.in);
 	private static boolean graphReady; // flag that graph has been build
 
@@ -251,9 +251,15 @@ public class Lab1 {
 				printMenu();
 				break;
 			default:
+<<<<<<< HEAD
 				System.out.println("ERROR: Can't make this choice.");
 			}
 			System.out.print("\nCommand (Enter h for help or else): ");
+=======
+				System.out.println("ERROR: Can't understand this choice.");
+			}
+			System.out.print("\nCommand (Enter h for help): ");
+>>>>>>> dev
 		}
 		sc.close();
 	}
@@ -262,8 +268,8 @@ public class Lab1 {
 		System.out.println("\t\t\t1.Enter the file path and name (eg.F:/test.txt)");
 		System.out.println("\t\t\t2.Show the diagraph");
 		System.out.println("\t\t\t3.Query the bridge words between two words (eg:hello world)");
-		System.out.println("\t\t\t4.complete the sentence by bridge words(eg:hello world one two three)");
-		System.out.println("\t\t\t5.calculate the shortest path by one word or two words(eg:hello world/hello)");
+	        System.out.println("\t\t\t4.Complete the sentence by bridge words(eg:hello world one two three)");
+		System.out.println("\t\t\t5.Calculate the shortest path by one word or two words(eg:hello world/hello)");
 		System.out.println("\t\t\t6.Walk randomly");
 		System.out.println("\t\t\t0.exit");
 	}

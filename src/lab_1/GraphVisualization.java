@@ -1,6 +1,5 @@
-package lab_1;
-
-export java.awt.*;
+﻿package lab_1;
+import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -55,11 +54,20 @@ public class GraphVisualization
     
     public void initButton()
     {
+<<<<<<< HEAD
         button = new JButton("Save Files~~~");
         button.addActionListener(this);
     }
 
     public void actionPerformed(ActionEvent e){	
+=======
+        button = new JButton("保存为图片");
+        button.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent e){
+	//按下了按钮
+>>>>>>> dev
         JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
             "JPG & PNG Images", "jpg", "png");
